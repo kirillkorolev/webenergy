@@ -1,0 +1,72 @@
+.main-nav {
+  background-color: $grey;
+  padding: 0 10px;
+}
+
+.main-nav__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.main-nav__link {
+  color: $white;
+  position: relative;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.main-nav__link::before {
+  @include underline-effect;
+
+  background-color: $white;
+}
+
+.main-nav__link[href]:hover::before,
+.main-nav__link[href]:focus::before {
+  left: 0;
+  width: 100%;
+}
+
+.main-nav__item {
+  padding: 0 20px;
+  margin: 10px 0;
+}
+
+.main-nav__item:not(:last-child) {
+  border-right: 1px solid $white;
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__item:not(:last-child) {
+    border-right: none;
+  }
+
+  .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav__item {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__link::before {
+    display: none;
+  }
+
+  .main-nav__link {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .main-nav__link[href]:hover,
+  .main-nav__link[href]:focus {
+    text-decoration: underline;
+  }
+}

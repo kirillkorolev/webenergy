@@ -1,0 +1,46 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__main-link,
+.breadcrumbs__link {
+  color: $grey;
+  position: relative;
+  line-height: 18px;
+  margin-right: 20px;
+}
+
+.breadcrumbs__main-link {
+  margin-right: 20px;
+}
+
+.breadcrumbs__link {
+  margin-right: 29px;
+}
+
+.breadcrumbs__main-link::after,
+.breadcrumbs__link::after {
+  @include hide-underline-effect;
+
+  background-color: $grey;
+}
+
+.breadcrumbs__main-link:hover::after,
+.breadcrumbs__main-link:focus::after,
+.breadcrumbs__link:hover::after,
+.breadcrumbs__link:focus::after {
+  width: 0;
+}
+
+.breadcrumbs__main-link::before,
+.breadcrumbs__link::before {
+  position: absolute;
+  content: "/";
+  font-size: 14px;
+  line-height: 18px;
+  color: $grey;
+  top: 0;
+  right: -13px;
+}

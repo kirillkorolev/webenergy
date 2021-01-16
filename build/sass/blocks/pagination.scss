@@ -1,0 +1,34 @@
+.pagination__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.pagination__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pagination__link {
+  color: $grey;
+  transition: color 0.3s ease-out 0.1s;
+}
+
+.pagination__item {
+  &--current {
+    color: $black;
+    font-size: 18px;
+  }
+}
+
+.pagination {
+  border-bottom: 1px solid $grey;
+}
+
+.pagination__link[href]:hover,
+.pagination__link[href]:focus {
+  color: $black;
+}

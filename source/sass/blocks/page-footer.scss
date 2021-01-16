@@ -1,0 +1,140 @@
+.page-footer {
+  background-color: $grey;
+  color: $white;
+  padding: 42px 10px 51px;
+}
+
+.page-footer__container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-footer__mail {
+  position: relative;
+  color: $white;
+}
+
+.page-footer__mail::before {
+  @include underline-effect;
+
+  background-color: $white;
+}
+
+.page-footer__mail:hover::before,
+.page-footer__mail:focus::before {
+  width: 100%;
+  left: 0;
+}
+
+.page-footer__links-list {
+  @include reset-list;
+}
+
+.page-footer__link {
+  color: $white;
+  position: relative;
+  line-height: 25px;
+}
+
+.page-footer__link::before {
+  @include hide-underline-effect;
+
+  background-color: $white;
+}
+
+.page-footer__link:hover::before,
+.page-footer__link:focus::before {
+  width: 0;
+}
+
+.page-footer__link:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.page-footer__author-logo {
+  width: 36px;
+  height: 38px;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.page-footer__author {
+  width: 180px;
+}
+
+.page-footer__site-developers {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-footer__author-link {
+  color: $white;
+
+  position: relative;
+}
+
+.page-footer__author-link::before {
+  @include hide-underline-effect;
+
+  background-color: $white;
+}
+
+.page-footer__author-link:hover::before,
+.page-footer__author-link:focus::before {
+  width: 0;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 462px;
+  margin-right: 5px;
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__container {
+    flex-direction: column;
+  }
+
+  .page-footer__wrapper {
+    margin-right: 0;
+    flex-direction: column;
+    max-width: none;
+  }
+
+  .page-footer__links-list {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .page-footer__item {
+    text-align: center;
+  }
+
+  .page-footer__info {
+    margin-bottom: 10px;
+  }
+
+  .page-footer__author {
+    width: 100%;
+  }
+
+  .page-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+
+  .page-footer__author-logo {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="test work">
+  <meta name="keywords" content="test">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="plugins/swiper/swiper.min.css" as="style">
+  <link rel="preload" href="fonts/open-sans-condensed-light.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-condensed-light.woff" as="font">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Сайт компании</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./plugins/picturefill.min.js" async></script>
+</head>
+<body>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-shop"><path d="M10.975 8L11 7.5c0-.517-.067-1.018-.181-1.5h5.993l-.564 2h-5.273zM8.5 18a1.5 1.5 0 10.001 3.001A1.5 1.5 0 008.5 18zM19.805 3l-3.432 12H5.945l-.455-1.083A6.59 6.59 0 014.5 14a6.49 6.49 0 01-1.191-.114L4.615 17h13.239l3.474-12h1.929L24 3h-4.195zM13.5 18a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM9 7.5A4.501 4.501 0 114.5 3C6.982 3 9 5.015 9 7.5zM7 7H5V5H4v2H2v1h2v2h1V8h2V7z" fill="currentColor"/></symbol></svg>
+  </div>
+  <div class="container">
+    <header class="container__header page-header">
+      <div class="page-header__container">
+          <a class="page-header__logo-link">
+            <picture>
+              <source type="image/webp" srcset="./img/pictures/logo@1x.webp, ./img/pictures/logo@2x.png 2x">
+              <img class="page-header__logo-image" alt="название компании" src="./img/pictures/logo@1x.png" srcset="./img/pictures/logo@2x.png 2x">
+            </picture>
+          </a>
+        <div class="page-header__contacts">
+          <button class="page-header__button js-open-modal" type="button">Обратная связь</button>
+          <a href="tel:+74997777777" class="page-header__phone-link page-header__phone-link--main">+7 (499) 777-77-77</a>
+          <a href="tel:+74997777777" class="page-header__phone-link page-header__phone-link--second">+7 (499) 777-77-77</a>
+        </div>
+      </div>
+    </header>
+    <main class="container__main">
+      <h1 class="visually-hidden">Сайт компании</h1>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current"><a class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка и оплата</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Прайс-лист</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="slider">
+        <div class="slider__content swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/slide-1@1x.webp, ./img/pictures/slide-1@2x.png 2x">
+                  <img class="slider__image" alt="слайд 1" src="./img/pictures/slide-1@1x.png" srcset="./img/pictures/slide-1@2x.png 2x">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source type="image/webp" srcset="./img/pictures/slide-2@1x.webp, ./img/pictures/slide-2@2x.png 2x">
+                  <img class="slider__image" alt="слайд 2" src="./img/pictures/slide-2@1x.png" srcset="./img/pictures/slide-2@2x.png 2x">
+                </picture>
+              </div>
+          </div>
+        </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <div class="content">
+        <div class="content__breadcrumbs breadcrumbs">
+          <a class="breadcrumbs__main-link" href="#">Главная</a>
+          <a class="breadcrumbs__link" href="#" >Каталог</a>
+          <div class="breadcrumbs__current">Бытовая техника</div>
+        </div>
+        <div class="content__container">
+          <aside class="content__leftblock leftblock">
+            <ul class="leftblock__list">
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Автомобили</a>
+              </li>
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Бытовая техника</a>
+                <ul class="leftblock__categories-list">
+                  <li class="leftblock__categories-item leftblock__categories-item--current">
+                    <a class="leftblock__categories-link">Микроволновки</a>
+                  </li>
+                  <li class="leftblock__categories-item">
+                    <a href="#" class="leftblock__categories-link">Холодильник</a>
+                  </li>
+                  <li class="leftblock__categories-item">
+                    <a href="#" class="leftblock__categories-link">Посудомоечные машины</a>
+                  </li>
+                  <li class="leftblock__categories-item">
+                    <a href="#" class="leftblock__categories-link">Чайники</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Мобильная техника</a>
+              </li>
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Компьютеры</a>
+              </li>
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Одежда</a>
+              </li>
+              <li class="leftblock__item">
+                <a href="#" class="leftblock__link">Недвижимость</a>
+              </li>
+            </ul>
+            <a class="leftblock__promo" href="#" target="_blank">
+              <picture>
+                <source type="image/webp" srcset="./img/pictures/excel-promo@1x.webp, ./img/pictures/excel-promo@2x.png 2x">
+                <img class="leftblock__promo-image" alt="Excel" src="./img/pictures/excel-promo@1x.png" srcset="./img/pictures/excel-promo@2x.png 2x">
+              </picture>
+              <div class="leftblock__promo-name">Прайс-лист</div>
+            </a>
+          </aside>
+          <div class="content__centerblock centerblock">
+            <ul class="centerblock__list">
+              <li class="centerblock__item">
+                <div class="centerblock__description">
+                  <a class="centerblock__item-link centerblock__item-link--no-image" href="#" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/pictures/nophoto@1x.webp, ./img/pictures/nophoto@2x.png 2x">
+                      <img class="centerblock__item-no-image" alt="чайник" src="./img/pictures/nophoto@1x.png" srcset="./img/pictures/nophoto@2x.png 2x">
+                    </picture>
+                  </a>
+                  <div class="centerblock__about-item">Самый клевый чайник, который надо купить!</div>
+                  <div class="centerblock__buy-wrap">
+                    <div class="centerblock__price">1900 р.</div>
+                    <button class="centerblock__buy-button" type="button" aria-label="добавить в корзину">
+                      <svg class="centerblock__basket" width="30" height="20">
+                        <use xlink:href="#icon-shop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="centerblock__item">
+                <div class="centerblock__description">
+                  <a class="centerblock__item-link centerblock__item-link--no-image" href="#" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/pictures/nophoto@1x.webp, ./img/pictures/nophoto@2x.png 2x">
+                      <img class="centerblock__item-no-image" alt="чайник" src="./img/pictures/nophoto@1x.png" srcset="./img/pictures/nophoto@2x.png 2x">
+                    </picture>
+                  </a>
+                  <div class="centerblock__about-item">Самый клевый чайник, который надо купить!</div>
+                  <div class="centerblock__buy-wrap">
+                    <div class="centerblock__price">1900 р.</div>
+                    <button class="centerblock__buy-button" type="button" aria-label="добавить в корзину">
+                      <svg class="centerblock__basket" width="30" height="20">
+                        <use xlink:href="#icon-shop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="centerblock__item">
+                <div class="centerblock__description">
+                  <a class="centerblock__item-link centerblock__item-link--no-image" href="#" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/pictures/nophoto@1x.webp, ./img/pictures/nophoto@2x.png 2x">
+                      <img class="centerblock__item-no-image" alt="чайник" src="./img/pictures/nophoto@1x.png" srcset="./img/pictures/nophoto@2x.png 2x">
+                    </picture>
+                  </a>
+                  <div class="centerblock__about-item">Самый клевый чайник, который надо купить!</div>
+                  <div class="centerblock__buy-wrap">
+                    <div class="centerblock__price">1900 р.</div>
+                    <button class="centerblock__buy-button" type="button" aria-label="добавить в корзину">
+                      <svg class="centerblock__basket" width="30" height="20">
+                        <use xlink:href="#icon-shop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="centerblock__item">
+                <div class="centerblock__description">
+                  <a class="centerblock__item-link centerblock__item-link--no-image" href="#" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/pictures/nophoto@1x.webp, ./img/pictures/nophoto@2x.png 2x">
+                      <img class="centerblock__item-no-image" alt="чайник" src="./img/pictures/nophoto@1x.png" srcset="./img/pictures/nophoto@2x.png 2x">
+                    </picture>
+                  </a>
+                  <div class="centerblock__about-item">Самый клевый чайник, который надо купить!</div>
+                  <div class="centerblock__buy-wrap">
+                    <div class="centerblock__price">1900 р.</div>
+                    <button class="centerblock__buy-button" type="button" aria-label="добавить в корзину">
+                      <svg class="centerblock__basket" width="30" height="20">
+                        <use xlink:href="#icon-shop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="centerblock__item">
+                <div class="centerblock__description">
+                  <a class="centerblock__item-link centerblock__item-link--no-image" href="#" target="_blank">
+                    <picture>
+                      <source type="image/webp" srcset="./img/pictures/nophoto@1x.webp, ./img/pictures/nophoto@2x.png 2x">
+                      <img class="centerblock__item-no-image" alt="чайник" src="./img/pictures/nophoto@1x.png" srcset="./img/pictures/nophoto@2x.png 2x">
+                    </picture>
+                  </a>
+                  <div class="centerblock__about-item">Самый клевый чайник, который надо купить!</div>
+                  <div class="centerblock__buy-wrap">
+                    <div class="centerblock__price">1900 р.</div>
+                    <button class="centerblock__buy-button" type="button" aria-label="добавить в корзину">
+                      <svg class="centerblock__basket" width="30" height="20">
+                        <use xlink:href="#icon-shop"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="centerblock__pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__item pagination__item--current">
+                  <a class="pagination__link">3</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">4</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">5</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">6</a>
+                </li>
+                <li class="pagination__item">
+                  <a href="#" class="pagination__link">7</a>
+                </li>
+              </ul>
+            </div>
+            <div class="centerblock__text-wrap">
+              <p class="centerblock__text centerblock__text--left">
+                Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+              </p>
+              <p class="centerblock__text centerblock__text--right">
+                Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container__footer page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__info">
+            <div class="page-footer__copyrights">&copy; 2012–2013 ЗАО «Компания»</div>
+            <a href="mailto:info@name.ru" class="page-footer__mail">info@name.ru</a>
+          </div>
+          <ul class="page-footer__links-list">
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link">Главная</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link">Каталог</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link">Доставка и оплата</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link">Прайс-лист</a>
+            </li>
+            <li class="page-footer__item">
+              <a href="" class="page-footer__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__site-developers">
+          <picture>
+            <source type="image/webp" srcset="./img/pictures/developers-logo@1x.webp, ./img/pictures/developers-logo@2x.png 2x">
+            <img class="page-footer__author-logo" alt="пиксель плюс" src="./img/pictures/developers-logo@1x.png" srcset="./img/pictures/developers-logo@2x.png 2x">
+          </picture>
+          <div class="page-footer__author">
+            <a href="#" class="page-footer__author-link" target="_blank">Разработка сайта</a> — компания «Пиксель Плюс»
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--hidden">
+      <button class="modal__close-button js-close-modal" type="button" aria-label="закрыть модальное окно"></button>
+      <div class="modal__slogan">Обратная связь</div>
+      <form class="modal__form" action="#" method="POST">
+        <div class="modal__item modal__item--name">
+          <input type="text" class="modal__input" id="user-name" minlength="2" maxlength="10">
+          <label for="user-name" class="modal__label">Ваше имя *</label>
+        </div>
+        <div class="modal__item modal__item--phone">
+          <input type="tel" class="modal__input" id="user-phone">
+          <label for="user-phone" class="modal__label">Телефон *</label>
+        </div>
+        <div class="modal__item modal__item--email">
+          <input type="email" class="modal__input" id="user-email">
+          <label for="user-email" class="modal__label">Email *</label>
+        </div>
+        <div class="modal__textarea-wrap">
+          <div class="modal__label">Сообщение</div>
+          <textarea  class="modal__textarea" rows="10"></textarea>
+        </div>
+        <button class="modal__submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  <div class="blackout blackout--hidden"></div>
+  <script src="./plugins/swiper/swiper.bundle.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+</html>
