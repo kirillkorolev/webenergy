@@ -1,0 +1,132 @@
+.leftblock {
+  width: 185px;
+  flex-shrink: 0;
+}
+
+.leftblock__list {
+  @include reset-list;
+
+  margin-bottom: 105px;
+}
+
+.leftblock__categories-list {
+  @include reset-list;
+}
+
+.leftblock__categories-item {
+  padding-left: 20px;
+  position: relative;
+
+  &--current {
+    .leftblock__categories-link {
+      color: $black;
+    }
+
+    .leftblock__categories-link::before {
+      background-color: $grey;
+      position: absolute;
+      content: "";
+      width: 100%;
+      left: 0;
+      height: 1px;
+      bottom: 0;
+    }
+  }
+}
+
+.leftblock__categories-item::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: $grey;
+  left: 10px;
+  top: 8px;
+}
+
+.leftblock__categories-link {
+  color: $grey;
+  position: relative;
+}
+
+.leftblock__link {
+  font-size: 18px;
+  line-height: 30px;
+  color: $grey;
+  position: relative;
+}
+
+.leftblock__link::before,
+.leftblock__categories-link::before {
+  @include underline-effect;
+
+  background-color: $grey;
+}
+
+.leftblock__link[href]:hover::before,
+.leftblock__link[href]:focus::before,
+.leftblock__categories-link[href]:hover::before,
+.leftblock__categories-link[href]:focus::before {
+  left: 0;
+  width: 100%;
+}
+
+.leftblock__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.leftblock__promo-name {
+  color: $black;
+  font-size: 30px;
+  line-height: 30px;
+  transition: all 0.3s ease-out 0.1s;
+}
+
+.leftblock__promo-image {
+  display: block;
+  width: 97px;
+  height: 111px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-out 0.1s;
+}
+
+.leftblock__promo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leftblock__promo:hover .leftblock__promo-image,
+.leftblock__promo:focus .leftblock__promo-image {
+  box-shadow: 0 -5px 15px 2px $grey;
+}
+
+.leftblock__promo:hover .leftblock__promo-name,
+.leftblock__promo:focus .leftblock__promo-name {
+  color: #000000;
+}
+
+@media (max-width: $mobile-width) {
+  .leftblock {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .leftblock__list {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .leftblock__promo-image {
+    width: 56px;
+    height: 71px;
+  }
+
+  .leftblock__promo-name {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
