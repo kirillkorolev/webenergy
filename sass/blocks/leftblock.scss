@@ -52,7 +52,7 @@
 
 .leftblock__link {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   color: $grey;
   position: relative;
 }
@@ -73,7 +73,7 @@
 }
 
 .leftblock__item:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 
 .leftblock__promo-name {
@@ -126,7 +126,7 @@
   }
 
   .leftblock__promo-name {
-    font-size: 20px;
+    font-size: 17px;
     line-height: 20px;
   }
 }

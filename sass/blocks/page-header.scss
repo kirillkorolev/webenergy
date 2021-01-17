@@ -5,8 +5,9 @@
 .page-header__container {
   width: 100%;
   max-width: 1000px;
-  padding: 40px 10px 65px;
+  padding: 37px 10px 68px;
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
+  margin-bottom: 10px;
 }
 
 .page-header__phone-link {
@@ -36,6 +38,7 @@
   line-height: 46px;
   color: $grey;
   transition: color 0.3s ease-out 0.1s;
+  letter-spacing: 0.7px;
 }
 
 .page-header__phone-link:hover,
@@ -49,6 +52,7 @@
   display: block;
   height: 100px;
   margin-right: 5px;
+  margin-top: 10px;
 }
 
 .page-header__logo-image {
@@ -68,6 +72,7 @@
   .page-header__logo-link {
     margin-right: 0;
     margin-bottom: 20px;
+    margin-top: 0;
   }
 
   .page-header__contacts {

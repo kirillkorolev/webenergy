@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  margin-left: 10px;
 }
 
 .pagination__item:not(:last-child) {
@@ -22,10 +23,6 @@
     color: $black;
     font-size: 18px;
   }
-}
-
-.pagination {
-  border-bottom: 1px solid $grey;
 }
 
 .pagination__link[href]:hover,
