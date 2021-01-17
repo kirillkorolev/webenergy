@@ -39,7 +39,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $white;
-  padding: 30px 65px 27px;
+  padding: 32px 65px 27px;
   z-index: 10;
   animation-name: fadeInDown;
   animation-duration: 2s;
@@ -53,7 +53,7 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   color: $charcoal;
   font-size: 24px;
   line-height: 24px;
@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin-bottom: 17px;
 }
 
 .modal__label {
